@@ -71,7 +71,7 @@ if uploaded_file is not None:
         st.error("Не удалось загрузить изображение. Попробуйте другой файл.")
     else:
         # Показываем изображение
-        st.image(image, channels="BGR", caption="Загруженное изображение")
+        st.image(image, channels="BGR", caption="Загруженное изображение", use_column_width=True)
 
         # Делаем предсказание
         with st.spinner("Анализируем изображение..."):
